@@ -1,0 +1,33 @@
+.bar1 {
+  display: flex;
+}
+
+.bar-item {
+  padding: 0 10px;
+  text-align: right;
+  max-width: 158px;
+  width: 158px;
+  min-width: 158px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bar-item1 {
+  padding: 0 6px;
+  padding-top: 4px;
+}
+
+.bar-b1 {
+  width: 100%;
+}
+
+.Bar-population {
+  height: 35px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  padding-right: 4px;
+}
