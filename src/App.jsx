@@ -22,6 +22,7 @@ function App() {
   const [totalPop, setTotalPop] = useState(0);
   const [uniqueYear, setUniqueYear] = useState(0);
   const [currentYear, setCurrentYear] = useState(0);
+  const [animationKey, setAnimationKey] = useState(0);
 
   let first = true;
   const fetchData = async () => {
@@ -67,6 +68,9 @@ function App() {
 
             setData(dataForYear);
             await sleep(200);
+            if (year >= uniqueYears[68]) {
+              setAnimationKey((prevKey) => prevKey + 1);
+            }
           }
         }
       }
@@ -120,7 +124,7 @@ function App() {
           </div>
           <div className="vertical_current">
             <div className="currentPoint">
-              <div className="currentPointX"> ▼</div>
+              <div className="currentPointX" key={animationKey}> ▼</div>
             </div>
             <div className="vertical_line">
               <div className="vertical">
