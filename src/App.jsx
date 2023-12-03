@@ -88,7 +88,7 @@ function App() {
   return (
     <>
       <div className="Paragraph">
-        <h2>Population growth per country, 1950 to 2021</h2>
+        <h2>Population growth per country, 1950 to 2018</h2>
         <span style={{ fontSize: "20px", fontWeight: "400" }}>
           Click on the legend below to filter by continent 👇
         </span>
